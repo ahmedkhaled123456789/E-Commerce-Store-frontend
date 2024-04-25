@@ -80,7 +80,7 @@ import { Container, Row } from "reactstrap";
        ):( 
         <Container>
         <Row>
-          <h1>Loading Products....</h1>
+          
          </Row>
       </Container>
        )
