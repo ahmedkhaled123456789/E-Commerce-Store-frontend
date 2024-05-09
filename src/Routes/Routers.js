@@ -13,7 +13,8 @@ import Account from '../pages/Account';
 import Product_Details from '../pages/Product_Details';
 import data from '../components/UI/Data'
 import Order from '../pages/Order';
-  
+ 
+
 const Routers = () => { 
 
   return (
@@ -34,7 +35,8 @@ const Routers = () => {
       <Route path="signup" element={<Signup />} />
         <Route path="checkout" element={<CheckOut />} />
         
-              
+     
+
              
       </Routes>
   )

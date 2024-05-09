@@ -6,15 +6,35 @@ import { useDispatch } from "react-redux";
 import { addProductFav } from "../../store/favProductSlice";
 import {addProducts} from '../../store/productSlice'
 import imgDefault from '../UI/images/products-1.png'
+import imgDefault2 from '../UI/images/products--2.png'
+import imgDefault3 from '../UI/images/products--3.png'
+import imgDefault4 from '../UI/images/products--4.png'
+
+import img_1  from '../UI/images/b-2.png';
+import img_2  from '../UI/images/b-3.png'
+import img_3  from '../UI/images/b-4.png'
+import img_4  from '../UI/images/b-5.png'
+import img_5  from '../UI/images/b-6.png'
+import img_6  from '../UI/images/b-7.png'
+import img_7  from '../UI/images/image-1.png'
+import img_8  from '../UI/images/image-2.png'
+import img_9  from '../UI/images/image-3.png'
+
  const ProductCard = ({ product }) => {
    const dispatch = useDispatch();
    const [loading, setLoading] = useState(false);
+ // Array of background photos
+const photos = [imgDefault2, imgDefault3, img_1, img_2,imgDefault4,imgDefault, img_3, img_4, img_5, img_6, img_7, img_8, img_9];
+
+// Select a random background from the photos array
+const background = photos[Math.floor(Math.random() * photos.length)];
+   
  const handleToggle = ()=>{
 setLoading(!loading)
 dispatch(
   addProductFav({
     id: product.id,
-    image:imgDefault,
+    image:background,
     title: product.title,
     newprice: product.price,
     beforePrice: product.priceAfterDiscount,
@@ -55,7 +75,7 @@ dispatch(
             </div>
             <motion.img
               whileHover={{ scale: 0.9 }}
-              src={imgDefault}
+              src={background}
               alt=""
               onClick={(e) => console.log(e.target.src)}
             />
