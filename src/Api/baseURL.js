@@ -1,6 +1,6 @@
 import axios from 'axios'
 
 
-const baseUrl = axios.create({ baseURL: "https://e-commerce-store-app-backend.vercel.app/" })
+const baseUrl = axios.create({ baseURL: "https://e-commerce-store-app-backend.onrender.com/" })
 
 export default baseUrl

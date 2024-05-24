@@ -126,6 +126,32 @@ justify-content: center;
  
   font-size: 14px;
  }
+
+
+/* SkeletonProduct */
+
+
+.head_Skeleton{
+  width: 250px;
+  height: 10px;
+  border-radius: 5px;
+  background: #e6e6e6;
+}
+.price_Skeleton{
+  width: 150px;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background: #e6e6e6;
+}
+
+.form_Skeleton {
+color: #e6e6e6;
+}
+
+
+
+
 /*  slick silder */
 
 .control-btn .next,
