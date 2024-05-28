@@ -90,7 +90,7 @@ const Footer = () => {
 
           <Col lg="12">
             <p className="footer_copyright">
-              CopyRight Ahmed Khaled {year} . All right reserved
+              CopyRight Company {year} . All right reserved
             </p>
           </Col>
         </Row>
