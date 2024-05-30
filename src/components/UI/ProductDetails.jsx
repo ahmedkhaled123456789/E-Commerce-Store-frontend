@@ -71,7 +71,7 @@ import { Container, Row } from "reactstrap";
         products.map((product, index) =>(
           <Container>
             <Row>
-            <ProductCard product={product} addProducts={addProducts} key={index}  />
+            <ProductCard   product={product} addProducts={addProducts} key={index}  />
 
             </Row>
           </Container>

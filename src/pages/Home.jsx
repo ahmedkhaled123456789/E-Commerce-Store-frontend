@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Banner from '../components/Banner/Banner'
 import { Container } from "reactstrap";
 import Flash_Sales from '../components/Home/Flash_Sales';
@@ -17,15 +17,16 @@ import {getProducts} from '../store/productReducer'
 const Home = () => {
   const product = useSelector((state) => state.products.products)
 
-  const dispatch = useDispatch();
+   const dispatch = useDispatch();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
     const get = async() =>{
-     await dispatch(getCategories())
+      await dispatch(getCategories())
      await dispatch(getProducts(50))
+ 
     }
   
     get();
@@ -34,20 +35,20 @@ const Home = () => {
    
    <Banner/> 
    <Container >
-    <Flash_Sales  products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
+    <Flash_Sales      products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
    </Container>
 
    <Container >
     <Categories/>
    </Container>
    <Container >
-    <Best_Sales  products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
+    <Best_Sales    products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
    </Container>
    <Container >
     <Advertise/>
    </Container>
    <Container >
-    <OurProducts  products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
+    <OurProducts    products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
    </Container>
    <Container >
     <Arrivals/> 
