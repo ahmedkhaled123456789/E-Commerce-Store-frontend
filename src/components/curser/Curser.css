@@ -1,0 +1,36 @@
+.cursor{
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  border: 1px solid  #DB4444;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  transition: .1s;
+  z-index: 9999999;
+}
+
+
+.cursor-2{
+  position: fixed;
+  z-index: 999999;
+  height: 8px;
+  width: 8px;
+  border: 1px solid #DB4444;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  transition: .15s;
+}
+@media (max-width: 768px){
+  .cursor{
+    display: none;
+  }
+   .cursor-2{
+    display: none;
+   }
+}

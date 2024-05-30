@@ -1,0 +1,28 @@
+.scrolltotop-btn {
+  z-index: 99999;
+  position: fixed;
+  right: 0;
+  bottom: 20px;
+  width: 45px;
+  height: 45px;
+  background: #DB4444;
+  font-size: 0.9em;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0;
+  transition: .5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.scrolltotop-btn a i{
+  color: #fff;
+}
+.scrolltotop-btn.active{
+  opacity: 1;
+  right: 20px;
+  pointer-events: all;
+}
+    

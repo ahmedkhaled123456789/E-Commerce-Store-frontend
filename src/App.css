@@ -62,6 +62,8 @@ button , input, textarea{
   outline: none;
   border: none;
 }
+
+ 
 section{
   padding: 60px 0px;
 }
@@ -69,3 +71,23 @@ section{
 i{
    cursor: pointer;
 }
+
+
+/*=======Scroll bar=======*/
+::-webkit-scrollbar{
+  width: 10px;
+   background:  #ccc;
+ }
+::-webkit-scrollbar-thumb{
+  background: #DB4444  ;
+  border-radius: 2em;
+  cursor: pointer;
+
+ }
+::-webkit-scrollbar-thumb:hover{
+  background: #DB4444 ;
+ }
+
+
+
+ 
