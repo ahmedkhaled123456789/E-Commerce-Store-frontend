@@ -130,7 +130,9 @@ justify-content: center;
 
 /* SkeletonProduct */
 
-
+.skeleton_col{
+  display: flex;
+}
 .head_Skeleton{
   width: 250px;
   height: 10px;
@@ -725,7 +727,7 @@ margin-bottom: 40px;
 
 }
 .control-btn .prev {
- left: 80%;
+ left: 87%;
 }
  
 .control-btn .prev i,
@@ -826,7 +828,7 @@ font-weight: 500;
    } 
   
   
-   @media only screen and (max-width: 576px) {
+   @media only screen and (max-width: 580px) {
      /* flash_sales */
 .flash_sales h3{
    font-size: 12px;
@@ -858,10 +860,10 @@ font-weight: 500;
  
 }
 .control-btn .prev {
-  left: 75% ;
+  left: 80% ;
 }
 .control-btn .next {
-  right: -5px;
+  right: 32px;
 }
 .control-btn .prev i,
 .control-btn .next i {
@@ -1010,7 +1012,7 @@ margin-top: 30px;
 
   
 
-     @media only screen and (max-width: 400px) {
+     @media only screen and (max-width: 525px) {
       /* flash_sales */
  .flash_sales h3{
     font-size: 12px;
@@ -1043,10 +1045,10 @@ margin-top: 30px;
   
  }
  .control-btn .prev {
-   left: 75% ;
+   left: 77% ;
  }
  .control-btn .next {
-   right: -5px;
+   right: 28px;
  }
  .control-btn .prev i,
  .control-btn .next i {
@@ -1194,3 +1196,28 @@ margin-top: 30px;
  
  
       }
+
+
+      @media only screen and (max-width: 400px) {
+        /* flash_sales */
+  
+   
+     
+   /*  slick silder */
+   
+   .control-btn .next,
+   .control-btn .prev {
+     top: -5%;
+      width: 30px;
+     height: 30px;
+     margin-top: 20px;
+    
+   }
+   .control-btn .prev {
+     left: 70% ;
+   }
+   .control-btn .next {
+     right: 30px;
+   }
+   
+        }

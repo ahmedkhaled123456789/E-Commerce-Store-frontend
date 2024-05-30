@@ -4,9 +4,12 @@ import './Home.css'
   import data from "../UI/Data";
  import ProductCard from '../UI/ProductCard';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import Skeleton from '../UI/Skeleton';
 
  const Best_Sales = ({products}) => {
- 
+  const loading = useSelector((state) => state.products.loading);
+
   return  <section className='best_sales'> 
 
 <Row>
@@ -25,13 +28,18 @@ import { Link } from 'react-router-dom';
 
 <Row className="cards mt-4">
   
-{
-          products && products.slice(6,10).map((product, index) =>(
-            <ProductCard  product={product} key={index}/>
-          ))
-        } 
  
  
+ {loading
+            ? Array.from({ length: 4 }).map((_, index) => (
+                <Skeleton key={index} />
+              ))
+            : products?.slice(6,10).map((product, index) => (
+                <ProductCard
+                  product={product}
+                   key={index}
+                />
+              ))}
 </Row>
 
   </section>

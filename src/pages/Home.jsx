@@ -35,20 +35,20 @@ const Home = () => {
    
    <Banner/> 
    <Container >
-    <Flash_Sales      products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
+    <Flash_Sales      products={product} addProducts={addProducts} addProductFav={addProductFav} />
    </Container>
 
    <Container >
     <Categories/>
    </Container>
    <Container >
-    <Best_Sales    products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
+    <Best_Sales    products={product} addProducts={addProducts} addProductFav={addProductFav} />
    </Container>
    <Container >
     <Advertise/>
    </Container>
    <Container >
-    <OurProducts    products={product &&product} addProducts={addProducts} addProductFav={addProductFav} />
+    <OurProducts    products={product} addProducts={addProducts} addProductFav={addProductFav} />
    </Container>
    <Container >
     <Arrivals/> 

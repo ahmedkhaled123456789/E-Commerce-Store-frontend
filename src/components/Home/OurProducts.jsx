@@ -5,9 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import ProductCard from "../UI/ProductCard";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Skeleton from "../UI/Skeleton";
 const OurProducts = ({ products }) => {
+  const loading = useSelector((state) => state.products.loading);
+
   const SampleNextArrow = (props) => {
     const { onClick } = props;
+
     return (
       <div className="control-btn" onClick={onClick}>
         <button className="next">
@@ -81,9 +86,15 @@ const OurProducts = ({ products }) => {
         </Col>
         <div className="slider-container">
           <Slider {...settings}>
-            {products &&
-              products.map((product, index) => (
-                <ProductCard product={product} key={index} />
+          {loading
+            ? Array.from({ length: 8 }).map((_, index) => (
+                <Skeleton key={index} />
+              ))
+            : products?.map((product, index) => (
+                <ProductCard
+                  product={product}
+                   key={index}
+                />
               ))}
           </Slider>
         </div>
