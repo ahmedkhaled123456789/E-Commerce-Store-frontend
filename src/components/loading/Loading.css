@@ -57,7 +57,9 @@
 }
 
 @media (max-width: 768px){
-
+  .loading{
+    display: none;
+  }
   .ring{
     width: 100px;
     height: 100px;
