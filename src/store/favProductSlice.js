@@ -46,7 +46,7 @@ const favProductSlice = createSlice({
      localStorage.setItem("totalQuantity", JSON.stringify(state.totalQuantity));
  
    }
-   },
+   }, 
    emptyAllProuducts:(state,action) =>{
 
     state.items=[];
