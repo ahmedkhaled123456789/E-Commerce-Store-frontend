@@ -6,9 +6,11 @@ import Head from '../Header/Head'
 import Louding from '../loading/Louding'
 import Button from '../button/Button'
 import Cuser from '../curser/Curser'
+import {  useLocation } from "react-router-dom";
 
 const Layout = () => {
- 
+  const location = useLocation();
+
   
   return (
 
@@ -16,8 +18,15 @@ const Layout = () => {
 <Louding/>
 <Button/>
 <Cuser/>
-    <Head/>
-     <Header/>
+{
+  location.pathname.startsWith("/admin") ? <> </>  :
+  <>
+  <Head/>
+ 
+  </>
+   
+  }
+   <Header/>
 
 <div>
   <Routers/>

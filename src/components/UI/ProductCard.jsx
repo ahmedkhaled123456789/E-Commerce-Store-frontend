@@ -1,5 +1,5 @@
 import React, { useState } from "react";
- import { Col } from "reactstrap";
+ import { Col } from "reactstrap"; 
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useDispatch,useSelector } from "react-redux";
@@ -42,7 +42,7 @@ dispatch(
     beforePrice: product.priceAfterDiscount,
   })
 )
- 
+  
  }
   const location = useLocation();
   
@@ -59,7 +59,7 @@ dispatch(
             <div className="icons">
               {location.pathname.startsWith("/wishlist") ? (
                   <Link replace to={`/product/${product.id}`}><i className="ri-eye-line"></i></Link>
-                ) : (
+                ) : ( 
                 <>
                   <i
                     onClick={() =>

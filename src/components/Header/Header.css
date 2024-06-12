@@ -100,7 +100,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background:  linear-gradient(to right, #937197  , #2e2c2c );
+    background:  linear-gradient(to right, #db4444  , #2e2c2c );
     line-height: 30px;
  filter: blur(.5);    
     display: none;

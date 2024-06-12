@@ -145,7 +145,7 @@ const About = () => {
       
             </>
        <Row className="delivery top_delivery mt-5">
-        <Col lg="4" className="text-center">
+        <Col lg="4" className="text-center mt-5">
           <div className="icons">
           <i class="ri-truck-line"></i>
           </div>

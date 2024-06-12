@@ -34,7 +34,7 @@ import Skeleton from '../UI/Skeleton';
             ? Array.from({ length: 4 }).map((_, index) => (
                 <Skeleton key={index} />
               ))
-            : products?.slice(6,10).map((product, index) => (
+            : products?.slice(3,7).map((product, index) => (
                 <ProductCard
                   product={product}
                    key={index}

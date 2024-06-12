@@ -47,7 +47,7 @@ const Categories = () => {
     <> 
       <div className='category'>
         {products ? (
-          products.map((value, index) => {
+          products.slice(0,9).map((value, index) => {
             return (
               <div className='box' key={index}>
   

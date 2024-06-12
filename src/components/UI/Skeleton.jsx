@@ -25,7 +25,7 @@ import React, { useState } from "react";
      </h3>
     <div className="price_Skeleton">
 
-     </div>
+     </div> 
     <div className="rating">
       <div className="form_Skeleton d-flex align-items-center gap-1 rating_group">
         <motion.span whileTap={{ scale: 1.2 }}>

@@ -1,0 +1,123 @@
+
+
+.img-thumbnail{
+  width: 120px;
+}
+ 
+
+.sidebar {
+  width: 100%;
+  max-width: 250px;
+  height: 100vh;
+  
+  overflow-y: auto;
+}
+
+.admin-side-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-side-text:hover {
+  background-color: #f1f1f1;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .admin-side-text {
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+.input-form {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.input-form-area {
+  width: 100%;
+  border: 1px solid #ccc;
+
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+.picker_img {
+  margin-left: 10px;
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.btn-save {
+  background-color: #DB4444;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-save:hover {
+  background-color: #d43e3e;
+}
+
+
+textarea{
+  resize: none;
+
+}
+
+
+.coupon-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.coupon-expiry {
+  color: #555550;
+  font-family: 'Almarai', sans-serif;
+  font-size: 16px;
+}
+
+.coupon-discount-label,
+.coupon-discount-value {
+  color: #555550;
+  font-family: 'Almarai', sans-serif;
+  font-size: 16px;
+}
+
+.coupon-discount-value {
+  color: #979797;
+}
+
+.item-edit,
+.item-delete {
+  margin: 0;
+  color: #000;
+}
+
+.item-edit:hover,
+.item-delete:hover {
+  text-decoration: underline;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
