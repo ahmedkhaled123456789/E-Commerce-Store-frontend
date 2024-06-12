@@ -111,7 +111,7 @@ const Header = () => {
               <div className="search">
                 <input
                   type="text"
-                  placeholder="What are you looking for?"
+                  placeholder="looking for?"
                   onChange={searchHandle}
                 />
                 <i className="ri-search-line"></i>

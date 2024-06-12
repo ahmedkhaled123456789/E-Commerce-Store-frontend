@@ -47,7 +47,7 @@ const Account = () => {
           <Breadcrumb.Item active>My Account</Breadcrumb.Item>
         </Breadcrumb>
         <Row className="account">
-          <Col lg="4" md="12">
+          {/* <Col lg="4" md="12">
             <div className="content_account">
               <h4>Manage My Account</h4>
               <div className="into">
@@ -68,9 +68,9 @@ const Account = () => {
             <div className="content_account">
               <h4>My WishList</h4>
             </div>
-          </Col>
+          </Col> */}
 
-          <Col lg="8" md="12" sm="12" xs="12" className="edit_input">
+          <Col lg="8" md="12" sm="12" xs="12" className="edit_input ">
             <div className="header_edit mb-2">
               <h2>Edit Your Profile</h2>
             </div>
@@ -104,7 +104,7 @@ const Account = () => {
               </div>
               <div className="password_change">
                 <h2>Password Changes</h2>
-                <FormGroup>
+                <FormGroup> 
                   <input
                     type="password"
                     value={oldPassword}
